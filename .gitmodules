@@ -1,0 +1,6 @@
+[submodule "test-fastapi-microservice"]
+	path = test-fastapi-microservice
+	url = https://github.com/IoT-Hub-Alpha/test-fastapi-microservice
+[submodule "test-django-microservice"]
+	path = test-django-microservice
+	url = https://github.com/IoT-Hub-Alpha/test-django-microservice
