@@ -2,6 +2,8 @@
 
 Umbrella repository for running test-fastapi-microservice and test-django-microservice together using Docker Compose.
 
+> **📚 Want to add a new microservice?** See [HOW_ADD_MICROSERVICE.md](./HOW_ADD_MICROSERVICE.md) for detailed instructions.
+
 ## Quick Start
 
 ### Clone with submodules
@@ -283,4 +285,41 @@ git submodule update --init --recursive
 docker compose down -v
 docker compose build --no-cache
 docker compose up -d
-``` 
+```
+
+## Documentation
+
+This repository includes comprehensive guides:
+
+- **[README.md](./README.md)** (this file)
+  - Overview and quick start
+  - Git workflows with submodules
+  - Docker Compose commands
+  - Configuration and typical workflow
+
+- **[DOCKER_COMPOSE_EXPLAINED.md](./DOCKER_COMPOSE_EXPLAINED.md)** - Detailed reference for every docker-compose.yml setting
+  - Services configuration (build, ports, networks, environment)
+  - Network configuration and service discovery
+  - Common modifications and examples
+  - Debugging tips
+  - Complete reference guide
+
+- **[HOW_ADD_MICROSERVICE.md](./HOW_ADD_MICROSERVICE.md)** - Step-by-step guide to add a new microservice
+  - Adding git submodules
+  - Docker Compose configuration
+  - Environment variable setup
+  - Code examples for different frameworks
+  - Port allocation
+  - Troubleshooting
+
+### Quick Documentation Links
+
+| Question | Document |
+|----------|----------|
+| How do I get started? | [README.md](./README.md) - Quick Start section |
+| What does each docker-compose setting do? | [DOCKER_COMPOSE_EXPLAINED.md](./DOCKER_COMPOSE_EXPLAINED.md) |
+| How do I add a new microservice? | [HOW_ADD_MICROSERVICE.md](./HOW_ADD_MICROSERVICE.md) |
+| How do I push/pull changes? | [README.md](./README.md) - Git Workflow section |
+| How do I run the services? | [README.md](./README.md) - Docker Compose Commands section |
+
+For detailed information, refer to the appropriate guide above. 
